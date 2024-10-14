@@ -1,0 +1,49 @@
+@model UserDtoForCreation 
+
+
+<div class="container text-center display-5"> Create User </div>
+
+<div class="container d-flex justify-content-center">
+    <div style="width:500px">
+        <div class="text-danger" asp-validate-summary="All"> </div>
+        <form method="post" asp-action="Create">
+            <div class="form-group my-3">
+                <label asp-for="UserName" > </label>
+                <input asp-for="UserName" class="form-control my-1" />
+            </div>
+            <div class="form-group my-3">
+                <label asp-for="Email" > </label>
+                <input asp-for="Email" class="form-control my-1" />
+            </div>
+            <div class="form-group my-3">
+                <label asp-for="Password"> </label>
+                <input asp-for="Password" class="form-control my-1"/>
+            </div>
+            <div class="form-group my-3">
+                <label asp-for="PhoneNumber" > Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control my-1" />
+            </div>
+            <div class="my-3 lead">
+               <h6>Roles</h6>
+                <div class="d-flex">
+                 @foreach( var role in Model.Roles)
+                 {
+                    <input name="Roles" value="@role" type="checkbox" class="form-check-input" />
+                    <label class="form-check-label ms-2 me-5"> @role </label>
+                 }
+                 </div>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary"> submit </button>
+                    <a asp-action="Index" class="btn btn-outline-primary" > 
+                       <i class="fa fa-solid fa-arrow-left"> </i>
+                       Back
+                    </a>
+                </div> 
+            </div>
+        </form>
+
+    </div>
+
+</div>

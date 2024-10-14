@@ -1,0 +1,30 @@
+
+
+@if(TempData["info"] is not null)
+{
+    <div class="alert alert-info my-3" role="alert">
+
+        @TempData["info"]
+    </div>
+}
+@if(TempData["success"] is not null)
+{
+    <div class="alert alert-success my-3" role="alert">
+
+        @TempData["info"]
+    </div>
+}
+@if(TempData["warning"] is not null)
+{
+    <div class="alert alert-warning my-3" role="alert">
+
+        @TempData["info"]
+    </div>
+}
+@if(TempData["danger"] is not null)
+{
+    <div class="alert alert-danger my-3" role="alert">
+
+        @TempData["info"]
+    </div>
+}

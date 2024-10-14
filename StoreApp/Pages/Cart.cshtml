@@ -1,0 +1,56 @@
+@page 
+@model CartModel
+
+
+
+     <h6 class="display-6 text-center"> Cart </h6>
+<div class="container">
+    <table> 
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+                <th></th>
+             </tr>
+        </thead>
+        <tbody>
+        @foreach(CartLine line in Model._cart?.Lines)
+        {
+            <tr>
+                <td>@line.Product.ProductName</td>
+                <td>@line.Quantity</td>
+                <td>@line.Product.Price.ToString("c",CultureInfo.GetCultureInfo("en-US"))</td>
+                <td>@(line.Product.Price *line.Quantity) </td>
+                <td>
+                    <form method="post" asp-page-handler="Remove">
+                        <input type="hidden" name="id" value="@line.Product.ProductId" />
+                        <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                        <button type="submit" class="btn btn-danger"> 
+                            <i class="fa fa-trash" > </i>
+                            Remove
+                        </button>
+
+                     </form>
+                 </td>
+                
+            </tr>
+        }
+
+         </tbody>
+         <tfoot> 
+            <tr>
+                <th colspan="3">Total </th> 
+                <td class="text-danger">@Model._cart.ComputeTotalValue().ToString("c",CultureInfo.GetCultureInfo("en-US"))</td> 
+                <td></td> 
+            </tr>
+         </tfoot>
+    
+    </table>
+    <div class="text-center"> 
+        <a class="btn btn-primary" href="@Model.ReturnUrl"> Keep Shopping </a>
+        <a class="btn btn-primary mx-2" asp-action="Checkout" asp-controller="Order"  > Checkout </a>
+    </div>
+
+ </div>

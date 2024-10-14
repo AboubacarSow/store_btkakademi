@@ -1,0 +1,13 @@
+@page 
+@model DemoModel
+
+<div class="text-center my-3">
+    <div class="display-6 my-3"> Hello <strong>@Model.FullName </strong> </div>
+    <div class="container-md">
+        <form method="post" asp-page-handler="OnPost">
+            <input type="text" placeholder="Enter your Fullname" class="form-control my-2" name="name" />
+            <button type="submit"  class="btn btn-primary my-2">Submit </button>
+        </form>
+    </div>
+
+</div>

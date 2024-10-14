@@ -1,0 +1,19 @@
+@model IEnumerable<Order> 
+
+<!--  "-->
+@if(Model.Count()> 0)
+{
+    @foreach(Order orderItem in Model)
+    {
+        <div class="my-3 container" > 
+            <partial name="_OrderCard" model="@orderItem" />
+        </div>
+    }
+
+}
+else
+{
+    <div class="container-md text-center">
+        <h6 class="alert alert-info rounded-2 p-2"> There is no order yet! </h6>
+    </div>
+}

@@ -1,0 +1,22 @@
+@page
+
+
+<div class="d-flex justify-content-center text-center my-4" > 
+   <h6 class="display-6">Thanks  <b class="display-6">@Name </b>! </div>
+   <p class="text-center"> Thanks for placing order #@OrderId </p>
+   <p class="text-center"> We'll reach you as soon as possible <p>
+   <div class="d-flex justify-content-center"> 
+         <a class="btn btn-primary text-center" asp-action="Index" asp-controller="Home" > Go to Store</a>
+   </div>
+</div>
+
+@functions
+{
+    [BindProperty(SupportsGet=true)]
+    
+    public string? OrderId { get; set; }
+
+    [BindProperty(SupportsGet=true)]
+
+    public string? Name {get; set; }
+}

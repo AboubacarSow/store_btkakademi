@@ -1,0 +1,71 @@
+
+<div class="row">
+
+    <div class="col-md-3">
+        <div class="card bg-primary">
+          <div class="card-body  rounded-2 text-center text-white">
+              <h6 class="card-subtitle mb-2 ">Number of</h6>
+              <h5 class="card-title">Products</h5>
+              <h3 class="card-text display-3">
+                @await Component.InvokeAsync("ProductSummary")
+              </h3>
+              <a asp-action="Create"style="text-decoration:none; cursor: pointer" asp-controller="Product"class="card-link text-white">Create</a>
+              <a asp-action="Index" style="text-decoration:none;cursor: pointer" asp-controller="Product"class="card-link text-white">
+              <i class="fa fa-list"> </i>
+              Products</a> 
+           </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card bg-danger" >
+          <div class="card-body  rounded-2 text-center text-white">
+              <h6 class="card-subtitle mb-2 ">Number of</h6>
+              <h5 class="card-title">Categories</h5>
+              <h3 class="card-text display-3">
+                @await Component.InvokeAsync("CategorySummary")
+              </h3>
+              <a asp-action="Index" style="text-decoration:none;cursor: pointer" asp-controller="Category"class="card-link text-white">
+              <i class="fa fa-list"> </i>
+              Categoies</a>
+              <a asp-action="Create" style="text-decoration:none;cursor: pointer" asp-controller="Product"class="card-link text-white">
+              New Category</a>
+     
+           </div>
+        </div>
+    </div>
+
+    
+    <div class="col-md-3">
+        <div class="card bg-info" >
+          <div class="card-body  rounded-2 text-center text-white">
+              <h6 class="card-subtitle mb-2 ">Number of</h6>
+              <h5 class="card-title">Users</h5>
+              <h3 class="card-text display-3">
+                @await Component.InvokeAsync("UserSummary")
+              </h3>
+              <a asp-action="Index" style="text-decoration:none;cursor: pointer" asp-controller="User"class="card-link text-white">
+              <i class="fa fa-list"> </i>
+              Users</a>
+              <a asp-action="Create" style="text-decoration:none;cursor: pointer" asp-controller="User"class="card-link text-white">
+              <i class="fa fa-list"> </i>
+              New User</a>
+           </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 ">
+        <div class="card bg-warning">
+          <div class="card-body  rounded-2 text-center text-white">
+              <h6 class="card-subtitle mb-2 ">Number of</h6>
+              <h5 class="card-title">Categories</h5>
+              <h3 class="card-text display-3">
+                @await Component.InvokeAsync("OrderInProgress")
+              </h3>
+              <a asp-action="Index" style="text-decoration:none;cursor: pointer" asp-controller="Order"class="card-link text-white">
+              <i class="fa fa-list"> </i>
+              Orders</a>
+           </div>
+        </div>
+    </div>
+</div>
+

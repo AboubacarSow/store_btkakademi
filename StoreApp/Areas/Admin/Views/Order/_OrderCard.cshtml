@@ -1,0 +1,56 @@
+@model Order
+
+
+@{
+
+decimal? total= @Model?.Lines.Sum(s=>s.Quantity* s.Product.Price);
+var affichTotal="$" + total.ToString();
+
+
+}
+<div class="row rounded-2 shadow"> 
+    <div class="col-md-3 bg-light shadow border-1 border-dark p-3">
+        <h5 class="display-5 text-center">
+        <i class="fa fa-address-book text-danger text-center"> </i>
+           <br>
+           @Model.Name</h5>
+        <p> @Model?.Line1</p>
+        <p> @Model?.Line2</p>
+        <p> @Model?.Line3</p>
+        <p> @Model?.City</p>
+        <div class="d-flex gap-2"> 
+            <p class="bg-warning px-2 py-1"> Shipped </p>
+            <p class="bg-info px-2 py-1">  @(Model.Shipped ? "Completed" : "In Progress")</p>
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <h6 class="display-6 text-center mt-3"> Cart </h6>
+
+        <ul class="list-group">
+
+        @foreach(var line in Model?.Lines)
+        {
+            <li class="list-group-item d-flex justify-content-between">
+                <b>@line.Product.ProductName</b>
+                <b>@line.Quantity * $@line.Product.Price=$
+                  @(line.Quantity*line.Product.Price)
+                </b>
+            </li>
+        }
+
+        <li class="list-group-item d-flex justify-content-between text-danger">
+          Total 
+          <b>@affichTotal</b>
+         </li>
+        </ul>
+        <div class="d-flex justify-content-center">
+            <form method="post" asp-action="Complete">
+                <input type="hidden" name="id" value="@Model.OrderId">
+                <button type="submit" class="btn btn-primary p-2 mt-4" disabled="@Model.Shipped"> Complete </button>
+            </form>
+
+        </div>
+    
+    </div>
+</div>

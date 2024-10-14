@@ -1,0 +1,17 @@
+@model IEnumerable<IdentityRole>
+
+<div class="text-center my-3 display-4"> Roles </div>
+
+<div class="container"> 
+     
+     <ul class="list-group">
+        @foreach(var role in Model)
+        {
+            <li class="list-group-item"> 
+                @role.Name
+           </li>
+        }
+     </ul>
+
+</div>
+

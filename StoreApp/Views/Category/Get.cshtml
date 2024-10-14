@@ -1,0 +1,13 @@
+@model Category;
+
+    <h4>@Model.CategoryName</h4>
+     <div class="btn-group">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+            <i class="fa-solid fa-house"></i>
+            Home
+            </a>
+        <a asp-action="Index" asp-controller="Category" class="btn btn-outline-primary">
+            <i class="fa-solid fa-list"></i>
+            Categories
+            </a>
+     </div>

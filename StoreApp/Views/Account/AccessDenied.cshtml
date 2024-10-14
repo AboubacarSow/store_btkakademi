@@ -1,0 +1,25 @@
+
+
+<div class="text-danger text-center my-5">
+    <h3 class="display-6">
+            <i class="fa fa-solid fa-bug-slash"> </i>
+            <br />
+            Access Denied
+    </h3>
+</div>
+<div class="text-center">
+    <div class="lead text-muted">
+        You don'nt have permission to reach this page. Please reach out the Administrator
+    </div>
+    <div class="btn-group my-5">
+        <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">
+          <i class="fa-solid fa-house"></i>
+         Home</a>
+        <a class="btn btn-outline-secondary" asp-controller="Product" asp-action="Index">
+         <i class="fa-solid fa-list"> </i>
+         Products</a>
+        <a class="btn btn-outline-secondary"  asp-page="/contact"> 
+         <i class="fa-regular fa-address-card"></i>
+        Contact</a>
+    </div>
+</div>
