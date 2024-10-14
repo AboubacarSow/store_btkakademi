@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj": {}
+    "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj": {
+    "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj",
+        "projectUniqueName": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj",
+        "projectPath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Aboubacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\obj\\",
+        "outputPath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj": {
+    "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
+        "projectPath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\Aboubacar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\obj\\",
+        "outputPath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -102,8 +102,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj"
+              "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Entities\\Entities.csproj"
               }
             }
           }

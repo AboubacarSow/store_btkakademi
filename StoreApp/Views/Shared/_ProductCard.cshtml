@@ -9,13 +9,13 @@
              <p class="card-text text-danger text-center">@Model.Price.ToString("c", CultureInfo.GetCultureInfo("en-US"))</p>
              <div class="btn-group d-flex justify-content-center">
                 <a class="btn btn-outline-secondary rounded-2 me-1" asp-controller="Product" asp-action="Get" asp-route-id="@Model.ProductId">
-                     <i class="fa-solid fa-arrow-right"></i>
+                     <i class="fa-solid fa-arrow-right"Details</i>
                  </a>
               <form id=@Model.ProductId asp-page="/Cart" method="post">
                 <input type="hidden" asp-for="ProductId" />
                 <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()"/>
                 <button class="btn btn-outline-secondary" type="submit"> 
-                    <i class="fa fa-cart-plus"></i>
+                    <i class="fa fa-cart-plus">Add to Cart</i>
                 </button>
               </form>
              </div>

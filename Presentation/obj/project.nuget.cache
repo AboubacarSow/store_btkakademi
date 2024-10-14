@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lt67MikEupQ=",
+  "dgSpecHash": "EiD8n/4/FH8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Presentation\\Presentation.csproj",
+  "projectFilePath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aboubacar\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Aboubacar\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

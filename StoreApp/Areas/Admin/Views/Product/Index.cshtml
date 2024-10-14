@@ -50,15 +50,18 @@
                                     data-bs-toggle="tooltip" data-bs-placement="top"
                                     data-bs-title="Edit"asp-action="Update" asp-route-id="@product.ProductId">
                                     <i class="fa fa-edit"></i>
+                                    Edit
                                 </a>
                                 <a class="btn btn-danger" 
                                     data-bs-toggle="tooltip" data-bs-placement="top"data-bs-title="Delete"asp-action="Delete" asp-route-id="@product.ProductId">
                                     <i class="fa fa-trash"></i>
+                                    Remove
                                 </a>
                                 <a class="btn btn-primary" asp-area="" 
                                     data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Search" 
                                 asp-controller="Product" asp-action="Get" asp-route-id="@product.ProductId">
                                     <i class="fa fa-search"></i>
+                                    Search
                                 </a>
                                 </div>
                             </td>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xxoao+YE9ZY=",
+  "dgSpecHash": "uxn99ZFxfU0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aboubacar\\Desktop\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
+  "projectFilePath": "D:\\University\\CODE\\SUMMER_2024\\BTK_Akademi\\MVC\\Store\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aboubacar\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aboubacar\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
